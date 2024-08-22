@@ -46,11 +46,8 @@ const UseMemo = () => {
                     }} onClick={() => setCount(count + 1)}>+</button>
             </div>
             <h1>Expensive Calculation</h1>
-            <input type="text" value={number} onChange={(e) => {
-                setNumber(e.target.value);
-            }} />
-
-            <div>Random Operation: <span id="calc">{Operation}</span></div>
+          
+            <p>1000000000</p>
             <hr />
             <hr />
         </div>
