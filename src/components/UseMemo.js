@@ -34,8 +34,8 @@ const UseMemo = () => {
             <hr />
 
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <p>Count: <span id="calc">{count}</span></p>
-                <button value = "+" id="incr-cnt" 
+                <p>Count: <span id="incr-cnt ">{count}</span></p>
+                <button value = "+" id="incr-btn" 
                 style={{ 
                     marginLeft: '10px', 
                     width: '20px', 
@@ -43,14 +43,14 @@ const UseMemo = () => {
                     display: 'flex', 
                     justifyContent: 'center', 
                     alignItems: 'center' 
-                    }} onClick={() => setCount(count + 1)}>{count}</button>
+                    }} onClick={() => setCount(count + 1)}>+</button>
             </div>
             <h1>Expensive Calculation</h1>
             <input type="text" value={number} onChange={(e) => {
                 setNumber(e.target.value);
             }} />
 
-            <div>Random Operation: {Operation}</div>
+            <div>Random Operation: <span id="calc">{Operation}</span></div>
             <hr />
             <hr />
         </div>
