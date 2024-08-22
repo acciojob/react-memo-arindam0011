@@ -41,7 +41,7 @@ const UseMemo = () => {
             </div>
             <h1>Expensive Calculation</h1>
           
-            <p id="calc">{count}</p>
+            <p id="calc">{1000000000+count}</p>
             <hr />
             <hr />
         </div>
