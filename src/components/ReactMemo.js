@@ -7,7 +7,7 @@ const ReactMemo = () => {
         <div>
             <h1>React.memo</h1>
             <input type='text' onChange={(e)=>setSkillInput(e.target.value)} value = {skillInput}/> 
-            <button onClick={()=>setSkills([...skills,skillInput])}>Add Skill</button>
+            <button id="skill-input" onClick={()=>setSkills([...skills,skillInput])}>Add Skill</button>
             <ul>
                 {
                     skills.map((skill, index)=> <li key={index}>{skill}</li>)
