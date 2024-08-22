@@ -6,13 +6,7 @@ const UseMemo = () => {
     const [count, setCount] = useState(0);
 
     const [number, setNumber] = useState();
-    const Operation = useMemo(() => {
-        let result = 0;
-        for (let i = 0; i < number; i++) {
-            result += i ** 6;
-        }
-        return result;
-    }, [number]);
+    
 
     return (
         <div>
@@ -47,7 +41,7 @@ const UseMemo = () => {
             </div>
             <h1>Expensive Calculation</h1>
           
-            <p id="calc">1000000000</p>
+            <p id="calc">{count}</p>
             <hr />
             <hr />
         </div>
