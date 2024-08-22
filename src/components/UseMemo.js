@@ -43,7 +43,7 @@ const UseMemo = () => {
                     display: 'flex', 
                     justifyContent: 'center', 
                     alignItems: 'center' 
-                    }} onClick={() => setCount(count + 1)}> + </button>
+                    }} onClick={() => setCount(count + 1)}>0</button>
             </div>
             <h1>Expensive Calculation</h1>
             <input type="text" value={number} onChange={(e) => {
