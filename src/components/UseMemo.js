@@ -3,9 +3,9 @@ import React, { useMemo, useState } from 'react';
 const UseMemo = () => {
     const [todos, setTodos] = useState(["New Todo"]);
 
-    const [count, setCount] = useState(1000000000);
+    const [count, setCount] = useState(0);
 
-    const [number, setNumber] = useState(0);
+    const [number, setNumber] = useState();
     const Operation = useMemo(() => {
         let result = 0;
         for (let i = 0; i < number; i++) {
