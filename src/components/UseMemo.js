@@ -34,7 +34,7 @@ const UseMemo = () => {
             <hr />
 
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <p>Count: <span id="incr-cnt ">{count}</span></p>
+                <p>Count: <span id="incr-cnt">{count}</span></p>
                 <button value = "+" id="incr-btn" 
                 style={{ 
                     marginLeft: '10px', 
