@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from 'react';
 
 const UseMemo = () => {
-    const [todos, setTodos] = useState(["New Todo"]); // Change to 'New Todo'
+    const [todos, setTodos] = useState(["New Todo"]);
 
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1000000000);
 
     const [number, setNumber] = useState(0);
     const Operation = useMemo(() => {
@@ -27,7 +27,7 @@ const UseMemo = () => {
 
             <button id="add-todo-btn"
                 onClick={() => {
-                    setTodos([...todos, "New Todo"]); // Change to 'New Todo'
+                    setTodos([...todos, "New Todo"]); 
                 }}
             >Add todo</button>
 
