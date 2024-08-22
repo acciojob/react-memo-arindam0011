@@ -29,7 +29,7 @@ const UseMemo = () => {
             
             <button id="add-todo-btn"
                 onClick={() => {
-                    setTodos([...todos, "new todo"])
+                    setTodos([...todos, "New todo"])
                 }}
             >Add todo</button>
             
